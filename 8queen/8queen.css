@@ -1,0 +1,50 @@
+body {
+  background-color: #333;
+  color: #ccc;
+}
+
+#container {
+  width: 32em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reset {
+  font-size: larger;
+  color: #ccc;
+  background-color: #933;
+  border: none;
+  padding: .5em;
+  transition: background-color 200ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.reset:hover {
+  background-color: #c33;
+  cursor: pointer;
+}
+
+#chessboard td {
+  width: 4em;
+  height: 4em;
+  transition: background-color 400ms;
+}
+
+#chessboard .able {
+  background-color: #99c;
+}
+
+#chessboard .able:hover {
+  background-color: #ccf;
+  cursor: pointer;
+}
+
+#chessboard .disable {
+  background-color: #666;
+}
+
+#chessboard .queen {
+  background-color: #f99;
+}
