@@ -15,24 +15,9 @@ $(function(){
   }
 
   $(document).on("click", ".able", function(){
-    $(this).removeClass('able').addClass('queen');
-    var queenX = $(this).data("x");
-    var queenY = $(this).data("y");
-    
-    $(".able").each(function(){
-      var x = $(this).data("x");
-      var y = $(this).data("y");
-      var diffX = Math.abs(x - queenX);
-      var diffY = Math.abs(y - queenY);
-      if ( x == queenX && y == queenY ){ return; }
-      if ( x == queenX || y == queenY || diffX == diffY ){
-        $(this).removeClass('able').addClass('disable');
-      }
-    });
 
-    if ($(".able").size() == 0 && $(".queen").size() == 8){
-      alert('Congratulations!!!');
-    }
+    // マスをクリックした時の処理
+
   });
 
   $(".reset").click(init);
