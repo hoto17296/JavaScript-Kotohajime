@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BMI計算フォーム</title>
+    <script src="bmi.js"></script>
+  </head>
+  <body>
+    <h1>BMI計算フォーム</h1>
+
+    <form name="BMIform" onsubmit="return showBMI()">
+      <div>
+        <input type="text" name="height" placeholder="身長を入力" />
+        cm
+      </div>
+      <div>
+        <input type="text" name="weight" placeholder="体重を入力" />
+        kg
+      </div>
+      <div>
+        <input type="submit" value="結果を表示" />
+      </div>
+    </form>
+
+    <p>
+      あなたのBMIは
+      <strong id="result"></strong>
+      です
+    </p>
+
+  </body>
+</html>
