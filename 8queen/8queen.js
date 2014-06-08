@@ -24,7 +24,6 @@ $(function(){
       var y = $(this).data("y");
       var diffX = Math.abs(x - queenX);
       var diffY = Math.abs(y - queenY);
-      if ( x == queenX && y == queenY ){ return; }
       if ( x == queenX || y == queenY || diffX == diffY ){
         $(this).removeClass('able').addClass('disable');
       }
