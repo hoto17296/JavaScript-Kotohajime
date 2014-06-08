@@ -29,6 +29,9 @@ $(function(){
       }
     });
 
+    if ($(".able").size() == 0 && $(".queen").size() == 8){
+      alert('Congratulations!!!');
+    }
   });
 
   $(".reset").click(init);
